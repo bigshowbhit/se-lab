@@ -38,6 +38,7 @@ public class TorpedoStore {
 
     // simulate random overheating of the launcher bay which prevents firing
     double r = random.nextDouble();
+    //Moved the random class initialization to the private member of the class.
 
     if (r >= FAILURE_RATE) {
       // successful firing
